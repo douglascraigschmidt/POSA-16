@@ -104,11 +104,12 @@ In particular, you'll need to do the following: <P>
 
 <LI> Finish the implementation of class methods defined by the
 Presenter layer residing in
-<CODE>src/edu/vandy/presenter/PalantiriPresenter.java</CODE>.  You'll
-need to (1) create/start a BeingThread for each Being, which
-concurrently acquires a Palantir from the Model layer and gazes into
-it for a certain amount of time and (2) start a thread to wait for all
-the Being threads to finish and then inform the View layer that the
+<CODE>src/edu/vandy/presenter/PalantiriPresenter.java</CODE> and
+<CODE>src/edu/vandy/presenter/BeingRunnable.java</CODE>.  You'll need
+to (1) create/start a BeingThread for each Being, which concurrently
+acquires a Palantir from the Model layer and gazes into it for a
+certain amount of time and (2) start a thread to wait for all the
+Being threads to finish and then inform the View layer that the
 simulation is done. <P>
 
 <LI> Finish the implementation of the Model layer in
